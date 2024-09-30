@@ -16,7 +16,7 @@ const App = () => {
     fetchData()
   }, [])
 
-  console.log(portfolioData)
+  // console.log(portfolioData)
 
   return (
     <>
