@@ -65,7 +65,9 @@ const Projects = ({ projects }) => {
                       Live Demo
                     </a>
                   </button>
-                  <div>
+                  {
+                    p?.repo && (
+                      <div>
                     {p?.repo?.split(",")?.length > 1 ? (
                       <>
                         {!showMultipleLinks ? (
@@ -120,6 +122,8 @@ const Projects = ({ projects }) => {
                       </button>
                     )}
                   </div>
+                    )
+                  }
                 </div>
               </div>
             </div>
